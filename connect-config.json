@@ -8,8 +8,11 @@
     "database.user": "postgres",
     "database.password": "postgre",
     "database.dbname": "debezium",
-    "database.server.name": "my-app-connector",
+    "slot.name": "debezium_slot",
+    "plugin.name": "pgoutput",
+    "database.server.name": "dbserver1",
     "database.history.kafka.bootstrap.servers": "kafka:9092",
-    "database.history.kafka.topic": "schema-changes.debezium"
+    "database.history.kafka.topic": "schema-changes.mydb",
+    "topic.prefix": "mydb"
   }
 }
