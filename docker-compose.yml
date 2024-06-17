@@ -78,6 +78,7 @@ services:
       - STATUS_STORAGE_TOPIC=connect_statuses
     volumes:
       - ./connect-config:/kafka/connect/config
+
   debezium-ui:
     image: debezium/debezium-ui:1.7
     container_name: debezium-ui
